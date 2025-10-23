@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Real Madrid CF - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<header>
+    <img style="height: 70px;" src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Logo Real Madrid"/>
+    <h1>Real Madrid CF</h1>
+</header>
+
+<nav aria-label="Menu principal">
+    <a href="home.html">Home</a>
+    <a href="historia.html">História</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="titulos.html">Títulos</a>
+    <a href="Loja.html">Loja</a>
+    <a href="carrinho.html">
+      <span id="quantidade"></span>
+      <img class="carrinho" src="https://static.vecteezy.com/system/resources/previews/019/787/018/original/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"/></a>
+</nav>
+
+<main>
+    <section>
+        <h2>Bem-vindo ao Real Madrid CF <img style="height: 40px;" src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Logo Real Madrid"/></h2>
+        <p>Conheça tudo sobre um dos maiores clubes do futebol mundial. Explore a história, os jogadores atuais e todos os títulos conquistados.</p>
+
+        <div class="slideshow-container">
+
+        <!-- Imagens -->
+        <div class="mySlides fade">
+            <img src="https://th.bing.com/th/id/R.7285396f42f96366ac3a84db764a3aeb?rik=H6oV135yAtOMjQ&pid=ImgRaw&r=0" style="width:100%">
+            <div class="text">Estádio do Real Madrid por Dentro</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/05/10152447/El-nuevo-Santiago-Bernabeu-estadio-Real-Madrid-1.jpg" style="width:100%">
+            <div class="text">Estádio do Real Madrid por Fora</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://statics.sportskeeda.com/wp-content/uploads/2015/08/real-madrid-club-structure-1438590556-800.jpg" style="width:100%">
+            <div class="text">Estádio do Real Madrid de Noite</div>
+        </div>
+
+        <!-- Mudança de slides -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- Os dots -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    </section>
+</main>
+<script src="slide.js"></script>
+<footer>
+    <p>© Real Madrid | feito por Afonso</p>
+</footer>
+
+</body>
+<script src="carrinho.js"></script>
+</html>

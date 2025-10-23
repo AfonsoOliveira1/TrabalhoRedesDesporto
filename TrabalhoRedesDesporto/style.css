@@ -1,0 +1,294 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #d0e7ff, #a0c4ff); /* tons claros de azul */
+    color: #222;
+}
+header {
+    background: linear-gradient(90deg, #3a7bd5, #00d2ff); /* azul vibrante */
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,50,0.4);
+}
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Olive Village', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0,0,70,0.3);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #4791db; /* azul médio */
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,70,0.2);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+nav a:hover,
+nav a:focus {
+    background-color: #003f7f; /* azul escuro */
+    box-shadow: 0 4px 8px rgba(0,0,100,0.4);
+    outline: none;
+}
+main {
+    padding: 30px 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+section {
+    background: linear-gradient(to bottom right, #e1f0ff, #c1dfff); /* azul bem clarinho */
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 3px 6px 15px rgba(0,0,80,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+}
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 6px 12px 20px rgba(0,0,120,0.3);
+}
+section h2 {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 2em;
+    background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+section img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #4791db;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+.btn:hover,
+.btn:focus {
+    background: #003f7f;
+    box-shadow: 0 6px 15px rgba(0,0,100,0.5);
+    outline: none;
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #4791db;
+    color: white;
+    margin-top: 40px;
+    border-top: 3px solid #003f7f;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+section table {
+width: 100%;
+border-collapse: collapse;
+}
+
+section table th,
+section table td {
+padding: 10px;
+text-align: center;
+}
+
+table img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.player-row {
+background-size: cover;
+background-position: center;
+color: white;
+font-size: 30px;
+font-weight: bold;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+height: 400px;
+}
+    .produto {
+    background: linear-gradient(to bottom right, #e1f0ff, #c1dfff);
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 3px 6px 15px rgba(0,0,80,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produto:hover {
+    transform: translateY(-8px);
+    box-shadow: 6px 12px 20px rgba(0,0,120,0.3);
+}
+.produto img {
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.produto h3 {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 1.8em;
+    background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.produto p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.preco {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #003f7f;
+    margin-bottom: 10px;
+}
+.btn-comprar {
+    background-color: #3a7bd5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-comprar:hover {
+    background-color: #003f7f;
+    box-shadow: 0 4px 10px rgba(0,0,80,0.3);
+}
+.carrinho{
+    height: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.total {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
